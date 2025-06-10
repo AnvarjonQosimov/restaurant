@@ -8,6 +8,7 @@ import QuyuqOvqatlar from "./components/QuyuqOvqatlar";
 import YozgiOvqatlar from "./components/YozgiOvqatlar";
 import Ichimliklar from "./components/Ichimliklar";
 import Muzqaymoqlar from "./components/Muzqaymoqlar";
+import TolanganSumma from "./components/TolanganSumma";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/yozgiovqatlar" element={<YozgiOvqatlar />} />
         <Route path="/ichimliklar" element={<Ichimliklar />} />
         <Route path="/muzqaymoqlar" element={<Muzqaymoqlar />} />
+        <Route path="/tolanganSumma" element={<TolanganSumma />} />
       </Routes>
     </div>
   );

@@ -69,6 +69,10 @@ function Sale() {
     }
   };
 
+  useEffect(() => {
+  localStorage.setItem("totalPrice", totalPrice);
+}, [totalPrice]);
+
   return (
     <div className="Sale">
       <div className="saleHeader">
@@ -172,7 +176,7 @@ function Sale() {
                   <strong>Stol: {confirmedTable}</strong>
                 </div>
               )}
-              <button className="tasdiqlashBtn">Tasdiqlandi va To‘landi</button>
+              <button className="tasdiqlashBtn"><Link to={"/tolanganSumma"}>Tasdiqlandi va To‘landi</Link></button>
             </>
           )}
         </div>

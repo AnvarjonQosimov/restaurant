@@ -1,0 +1,47 @@
+.TolanganSumma{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.summaBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    height: 87%;
+    background-color: rgb(233, 233, 233);
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+.tolanishiKerakBolganSumma h1:nth-child(2){
+    color: red;
+}
+
+.tolanganSumma input{
+    width: 65%;
+    padding: 15px 10px;
+    font-size: 25px;
+    background-color: rgb(212, 212, 212);
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    color: rgb(83, 83, 83);
+    font-weight: 900;
+}
+
+.tolanganSumma h1:nth-child(3){
+    color: red;
+}
+
+.berilishiKerakBolganQaytim h1:nth-child(2){
+    color: red;
+}
