@@ -1,0 +1,88 @@
+.Enter{
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    width: 100% !important;
+    height: 100vh;
+}
+
+.googleIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+    line-height: 100px;
+    animation: enterFunc 0.5s 1;
+}
+
+.googleIcon i{
+    font-size: 50px;
+    background-color: rgb(206, 206, 206);
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    animation: iconFunc 0.5s 1;
+}
+
+.googleIcon h1{
+    font-size: 25px;
+    animation: textFunc 0.5s 1;
+}
+
+@keyframes enterFunc {
+    from{
+        width: 50px;
+        height: 30px;
+    }to{
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@keyframes iconFunc {
+    from{
+        width: 20px;
+        height: 10px;
+    }to{
+        width: 200px;
+        height: 100px;
+    }
+}
+
+@keyframes textFunc {
+    from{
+        font-size: 2.5px;
+    }to{
+        font-size: 25px;
+    }
+}
+
+.logoutContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.logoutBtn {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logoutBtn:hover {
+  background-color: #e04344;
+}

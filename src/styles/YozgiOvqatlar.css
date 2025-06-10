@@ -1,0 +1,112 @@
+.FastFood{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    height: 100%;
+}
+
+.fastFoodBolimlar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    min-height: 90vh;
+    min-height: 100%;
+    margin: 50px auto 0 auto;
+}
+
+.fastFoodBolim{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    margin: 130px 30px;
+}
+
+.fastFoodIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.fastFoodIcon i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.fastFoodBolim i:hover{
+    background-color: rgb(231, 231, 231);
+    height: 100%;
+    width: 27%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fastFoodBolim .fastFoodText{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 50%;
+    height: 200px;
+    padding: 30px 30px;
+    border-radius: 20px;
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+
+.fastFoodText h1{
+    height: 20%;
+    margin-bottom: -50px;
+    margin-top: -1px;
+}
+
+.fastFoodText h3{
+    height: 20%;
+    font-size: 20px;
+    width: 80%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.fastFoodText p{
+    height: 20%;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: -60px;
+}
+
+.fastFoodText p{
+    height: 20%;
+}
+
+.orqaga{
+    font-size: 30px;
+    width: 90%;
+    margin: 30px 0 20px 0;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+.orqaga a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: black;
+}

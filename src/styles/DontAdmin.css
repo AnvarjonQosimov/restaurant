@@ -1,0 +1,40 @@
+.logoutBtn {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.logoutBtn:hover {
+  background-color: #e04344;
+}
+
+.DontAdmin{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.DontAdmin h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.DontAdmin .logoutBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 10%;
+}
