@@ -247,3 +247,47 @@
   border: none;
   cursor: pointer;
 }
+
+/* .tasdiqlashBtn:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+} */
+
+.tasdiqlashBtn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tasdiqlashBtn:hover {
+  background-color: #218838;
+}
+
+.tasdiqlashBtn:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Animatsiya: shake */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Shake class */
+.disabledShake {
+  animation: shake 0.4s ease;
+  animation-iteration-count: 2;
+}

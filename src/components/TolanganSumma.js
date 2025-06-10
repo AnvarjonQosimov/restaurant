@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import "../styles/TolanganSumma.css";
-import {Link} from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { FaAngleLeft } from "react-icons/fa";
 
 function TolanganSumma() {
   const [totalPrice, setTotalPrice] = useState(0);
   const [paidAmount, setPaidAmount] = useState("");
   const [change, setChange] = useState(null);
+    const navigate = useNavigate();
 
   useEffect(() => {
     const stored = localStorage.getItem("totalPrice");
@@ -25,6 +26,10 @@ function TolanganSumma() {
     } else {
       setChange(null);
     }
+  };
+
+  const handleConfirm = () => {
+    navigate("/sale");
   };
 
   return (
@@ -46,6 +51,7 @@ function TolanganSumma() {
             placeholder="To‘langan summani kiriting"
             value={paidAmount}
             onChange={handlePaidAmountChange}
+            onWheel={(e) => e.target.blur()} // scroll bo‘lsa, fokusni yo‘qotadi
           />
           <h1>{paidAmount && !isNaN(change) ? parseFloat(paidAmount).toLocaleString() + " so'm" : ""}</h1>
         </div>
@@ -58,6 +64,12 @@ function TolanganSumma() {
               : ""}
           </h1>
         </div>
+
+        {change !== null && change >= 0 && (
+          <div className="qaytimBerildiBtn">
+          <button onClick={handleConfirm} className="tasdiqlashBtn"><Link to={"/sale"}>Tasdiqlash</Link></button>
+        </div>
+        )}
       </div>
     </div>
   );
